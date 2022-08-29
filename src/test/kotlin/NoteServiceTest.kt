@@ -1,7 +1,7 @@
 import org.junit.Test
 
 import org.junit.Assert.*
-
+import kotlin.test.expect
 
 class NoteServiceTest {
 
@@ -29,8 +29,8 @@ class NoteServiceTest {
     }
     @Test
     fun deleteTest() {
-        val realValue = note1.delete(2, noteList)
-        val expectedValue = false
+        val realValue = note2.delete(2, noteList)
+        val expectedValue = true
         assertEquals(expectedValue, realValue)
     }
 
